@@ -1,6 +1,6 @@
 /**
  * Feedback Annotation Overlay
- * 獨立網站回饋標註系統 — 書籤工具 v2
+ * 獨立網站回饋標註系統 — 書籤工具 v2.1
  *
  * 使用方式：
  *   1. Bookmarklet：貼到瀏覽器書籤的 URL 欄
@@ -577,8 +577,8 @@
       pin.dataset.id = a.id;
       pin.textContent = a.num;
       pin.style.cssText = `
-        left:${a.pos.x + window.scrollX}px;
-        top:${a.pos.y + window.scrollY}px;
+        left:${a.pos.x}px;
+        top:${a.pos.y}px;
         background:${ti.color};
         position:absolute;
       `;
